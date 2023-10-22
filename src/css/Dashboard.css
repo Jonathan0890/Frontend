@@ -1,0 +1,95 @@
+/* Estilos para la clase .p-4 */
+.p-4 {
+  padding: 1rem;
+}
+
+/* Estilos para la clase .sm:ml-50 */
+.sm\:ml-50 {
+  margin-left: 12.5rem; /* Ajusta el valor según tus necesidades */
+}
+
+/* Estilos para la clase .p-20 */
+.p-20 {
+  padding: 5rem;
+}
+
+/* Estilos para la clase .border-dashed */
+.border-dashed {
+  border-style: dashed;
+  border-width: 1px;
+}
+
+/* Estilos para la clase .flex */
+.flex {
+  display: flex;
+}
+
+/* Estilos para la clase .items-center */
+.items-center {
+  align-items: center;
+}
+
+/* Estilos para la clase .justify-center */
+.justify-center {
+  justify-content: center;
+}
+
+/* Estilos para la clase .rounded */
+.rounded {
+  border-radius: 0.25rem; /* Ajusta el valor según tus necesidades */
+}
+
+/* Estilos para la clase .container */
+.container {
+  max-width: 100%; /* Ajusta el valor según tus necesidades */
+  margin-right: auto;
+  margin-left: auto;
+  padding-right: 1rem;
+  padding-left: 1rem;
+}
+
+/* Estilos para la clase .relative */
+.relative {
+  position: relative;
+}
+
+/* Estilos para la tabla */
+table {
+  width: 100%;
+  font-size: 0.875rem; /* Ajusta el valor según tus necesidades */
+  text-align: left;
+  color: #666; /* Ajusta el color según tus necesidades */
+}
+
+/* Estilos para la cabecera de la tabla */
+table thead {
+  font-size: 0.75rem; /* Ajusta el valor según tus necesidades */
+  background-color: #333; /* Ajusta el color según tus necesidades */
+  color: #eee; /* Ajusta el color según tus necesidades */
+}
+
+/* Estilos para las celdas de la tabla */
+table td {
+  padding: 0.75rem; /* Ajusta el valor según tus necesidades */
+}
+
+/* Estilos para los enlaces */
+a {
+  text-decoration: none;
+  color: #007bff; /* Ajusta el color según tus necesidades */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Estilos para los botones */
+button {
+  cursor: pointer;
+  text-decoration: none;
+  color: #007bff; /* Ajusta el color según tus necesidades */
+}
+
+button:hover {
+  text-decoration: underline;
+}

@@ -1,0 +1,60 @@
+.Sidebar {
+    width: 14rem;
+    height: calc(100vh - 52px);
+    border-right: 1px solid grey;
+}
+
+.Sidebar ul {
+    list-style: none;
+    padding: 1rem 2rem;
+}
+
+.Sidebar ul li {
+    margin-bottom: 1rem;
+}
+
+.Sidebar ul li a {
+    text-decoration: none;
+}
+
+.Sidebar ul li a.active {
+    background-color: gray;
+    /* Cambia el color según tu preferencia */
+}
+
+.me-2 {
+    margin-right: 0.5rem;
+    /* Ajusta el valor según tus necesidades */
+}
+
+.text-dark {
+    color: black;
+    /* Cambia el color según tu preferencia */
+}
+
+.rounded {
+    border-radius: 0.25rem;
+    /* Puedes ajustar el valor según tus necesidades */
+}
+
+.py-2 {
+    padding-top: 0.5rem;
+    /* Puedes ajustar el valor según tus necesidades */
+    padding-bottom: 0.5rem;
+    /* Puedes ajustar el valor según tus necesidades */
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.d-inlineblock {
+    display: inline-block;
+}
+
+.px-3 {
+    padding-left: 0.75rem;
+    /* Puedes ajustar el valor según tus necesidades */
+    padding-right: 0.75rem;
+    /* Puedes ajustar el valor según tus necesidades */
+}
