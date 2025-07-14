@@ -4,7 +4,7 @@ import ReCAPTCHA from 'react-google-recaptcha';
 
 const Contact = () => {
     // Configuración de reCAPTCHA
-    const RECAPTCHA_SITE_KEY = "6LeFaWsrAAAAABUWyigbEy58y9dKh5BpjYzeZBaI";
+    const RECAPTCHA_SITE_KEY = import.meta.env.VITE_RECAPTCHA_SITE_KEY;
     
     // Estados del formulario
     const [formData, setFormData] = useState({
@@ -158,13 +158,15 @@ const Contact = () => {
             };
 
             // Enviar datos al backend
-            const response = await fetch('http://localhost:3000/api/contacto', {
+            const response = await fetch(import.meta.env.VITE_API_BACKEND_URL + '/api/contacto', {
+
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(payload),
             });
+
 
             const data = await response.json();
 
