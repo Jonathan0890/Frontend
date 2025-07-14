@@ -43,7 +43,7 @@ const Dashboard = () => {
     const fetchContacts = async () => {
         setIsLoading(true);
         try {
-            const response = await fetch(import.meta.env.VITE_API_BACKEND_URL + '/api/contactos');
+            const response = await fetch(import.meta.env.VITE_API_BACKEND_URL + '/api/contacto');
             if (!response.ok) throw new Error('Error al cargar contactos');
 
             const data = await response.json();
@@ -166,7 +166,7 @@ const Dashboard = () => {
     // Cambiar estado de contacto
     const handleStatusChange = async (id, newStatus) => {
         try {
-            const response = await fetch(`${import.meta.env.VITE_API_BACKEND_URL}/api/contactos/${id}`, {
+            const response = await fetch(`${import.meta.env.VITE_API_BACKEND_URL}/api/contacto/${id}`, {
                 method: 'PATCH',
                 headers: {
                     'Content-Type': 'application/json',
@@ -194,7 +194,7 @@ const Dashboard = () => {
     const handleDelete = async (id) => {
         if (window.confirm('¿Estás seguro de eliminar este contacto?')) {
             try {
-                const response = await fetch(`${import.meta.env.VITE_API_BACKEND_URL}/api/contactos/${id}`, {
+                const response = await fetch(`${import.meta.env.VITE_API_BACKEND_URL}/api/contacto/${id}`, {
                     method: 'DELETE',
                 });
 
@@ -221,7 +221,7 @@ const Dashboard = () => {
 
         if (window.confirm(`¿Eliminar ${selectedContacts.length} contactos seleccionados?`)) {
             try {
-                const response = await fetch(import.meta.env.VITE_API_BACKEND_URL + '/api/contactos/bulk', {
+                const response = await fetch(import.meta.env.VITE_API_BACKEND_URL + '/api/contacto/bulk', {
                     method: 'DELETE',
                     headers: {
                         'Content-Type': 'application/json',
