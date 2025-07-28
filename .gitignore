@@ -23,3 +23,12 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# Docker
+*/docker-compose.override.yml
+*/.dockerignore
+*/.env.docker
+
+# Vite cache
+.cache/
+.temp/

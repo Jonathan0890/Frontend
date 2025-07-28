@@ -158,7 +158,7 @@ const Contact = () => {
             };
 
             // Enviar datos al backend
-            const response = await fetch(import.meta.env.VITE_API_BACKEND_URL + '/api/contacto', {
+            const response = await fetch(import.meta.env.VITE_API_BASE_URL + '/api/contacto', {
 
                 method: 'POST',
                 headers: {
