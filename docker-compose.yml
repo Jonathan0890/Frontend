@@ -6,18 +6,18 @@ services:
     container_name: frontend-service
     hostname: frontendCrea
     ports:
-      - "3000:80"
+      - "3212:80"
     networks:
       - app-network
   backend:
     build:
-      context: ../Efa/CreativaStudio/backend # Reemplaza con la ruta correcta
+      context: ../landing-page-contacto/backend # Reemplaza con la ruta correcta
     container_name: backend-service
     volumes:
-      - ../Efa/CreativaStudio/backend:/app
+      - ../landing-page-contacto/backend:/app
       - /app/node_modules
     ports:
-      - "3001:3000"
+      - "3195:3000"
     networks:
       - app-network
     environment:
